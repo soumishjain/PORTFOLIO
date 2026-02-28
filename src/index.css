@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@keyframes slideX {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.animate-slideX {
+  animation: slideX 14s linear infinite;
+  will-change: transform;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+.animate-blink {
+  animation : blink 1s infinite;
+}
+
+/* Hide scrollbar for Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+.text-fill {
+  -webkit-text-stroke: 1px white;
+  color: white;
+  transition: color 1s ease;
+}
+
+.text-gradient-fill {
+  background: linear-gradient(to top, white 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+  transition: background-position 1s ease;
+}
+
+.text-gradient-fill.active {
+  background-position: top;
+}
