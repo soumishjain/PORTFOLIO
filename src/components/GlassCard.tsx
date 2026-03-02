@@ -69,11 +69,11 @@ const GlassCard = ({
 
         {/* Content */}
         <div className="relative z-10 h-full justify-center flex items-center flex-col py-16 px-16">
-          <h2 className="text-5xl max-md:text-3xl font-bold text-white">
+          <h2 className="text-5xl text-center max-md:text-3xl font-bold text-white">
             {title}
           </h2>
 
-          <p className="text-xl text-center text-gray-300 max-w-2xl leading-relaxed mt-6">
+          <p className="text-xl max-md:text-sm text-center text-gray-300 max-w-2xl leading-relaxed mt-6">
             {description}
           </p>
         </div>
