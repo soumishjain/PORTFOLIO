@@ -16,4 +16,4 @@ const HeroPage = () => {
   );
 };
 
-export default HeroPage
+export default HeroPage 

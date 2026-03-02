@@ -24,7 +24,7 @@ const About = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full min-h-screen bg-gradient-to-b bg-neutral-900 text-white px-16 py-32 overflow-hidden"
+      className="relative w-full min-h-screen bg-gradient-to-b bg-black text-white px-16 py-32 overflow-hidden"
     >
       {/* Big Background Text */}
      <h1
