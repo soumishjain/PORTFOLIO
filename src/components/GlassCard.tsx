@@ -3,11 +3,11 @@ import { useRef } from "react";
 const GlassCard = ({
   title,
   description,
-  video,
+  img,
 }: {
   title: string;
   description: string;
-  video: string;
+  img: string;
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -22,7 +22,7 @@ const GlassCard = ({
     const centerY = rect.height / 2;
 
     const rotateX = -(y - centerY) / 30;
-    const rotateY = (x - centerX) / 60;
+    const rotateY = (x - centerX) / 30;
 
     cardRef.current.style.transform = `
       perspective(1000px)
@@ -50,30 +50,30 @@ const GlassCard = ({
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         className="relative w-[80%] h-[70vh] rounded-3xl overflow-hidden
-          border border-white/20
-          shadow-[0_0_40px_rgba(255,255,255,0.1)]
-          transition-transform duration-300 ease-out"
+        border border-white/20
+        shadow-[0_0_40px_rgba(255,255,255,0.1)]
+        transition-transform duration-300 ease-out"
       >
-        {/* Background Video */}
-        <video
-          src={video}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute rounded-2xl inset-0 w-full h-full object-cover"
+        {/* Background Image */}
+        <img
+          src={img}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* Dark + Glass Overlay */}
-        <div className="absolute inset-0 bg-black/50 backdrop-blur-xl"></div>
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Glass Blur Layer */}
+        <div className="absolute inset-0 backdrop-blur-md"></div>
 
         {/* Content */}
-        <div className="relative z-10 h-full justify-center flex items-center flex-col py-16 px-16">
-          <h2 className="text-5xl text-center max-md:text-3xl font-bold text-white">
+        <div className="relative z-10 h-full flex items-center justify-center flex-col py-16 px-16 text-center">
+          <h2 className="text-5xl max-md:text-3xl font-bold text-white">
             {title}
           </h2>
 
-          <p className="text-xl max-md:text-sm text-center text-gray-300 max-w-2xl leading-relaxed mt-6">
+          <p className="text-xl max-md:text-sm text-gray-300 max-w-2xl leading-relaxed mt-6">
             {description}
           </p>
         </div>

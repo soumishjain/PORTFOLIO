@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 const words = [
-  "Web Developer",
-  "Competitive Programmer",
-  "Learner",
+  "Web Developement",
+  "Competitive Programming",
+  "Data Structures & Algorithm",
 ];
 
 const Typewriter = () => {

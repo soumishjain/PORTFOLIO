@@ -50,7 +50,7 @@ html {
   background-position: bottom;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px rgb(27, 223, 223);
   transition: background-position 1s ease;
 }
 
