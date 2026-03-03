@@ -28,9 +28,20 @@ const About = () => {
     >
       {/* Big Background Text */}
      <h1
-  className={`absolute text-[18vw] max-md:text-[22vw] font-extrabold top-20 left-10 select-none ${
-    visible ? "text-gradient-fill active" : "text-gradient-fill"
-  }`}
+  className={`
+    absolute 
+    text-[18vw] md:text-[18vw] max-md:text-[28vw]
+    font-extrabold 
+    select-none 
+    pointer-events-none
+    top-10 md:top-20
+    left-1/2 md:left-10
+    -translate-x-1/2 md:translate-x-0
+    text-center md:text-left
+    ${
+      visible ? "text-gradient-fill active" : "text-gradient-fill"
+    }
+  `}
 >
   ABOUT
 </h1>
