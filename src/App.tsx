@@ -1,5 +1,5 @@
 import About from "./components/About"
-import ContactSection from "./components/contactSection"
+import ContactSection from "./components/ContactSection"
 import CustomCursor from "./components/CustomCursor"
 import HeroPage from "./components/HeroPage"
 import Projects from "./components/Projects"
