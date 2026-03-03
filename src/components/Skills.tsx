@@ -85,19 +85,19 @@ const Skills = () => {
         <GlassCard
           title="Web Development"
           description="Designing and building scalable full-stack applications using the MERN stack, with a strong focus on clean architecture, reusable components, optimized APIs, and smooth, responsive user experiences. I prioritize performance, maintainability, and real-world usability in every project."
-          video="video3.mp4"
+          img="/WebDev.png"
         />
 
         <GlassCard
           title="Data Structures & Algorithms"
           description="Strong foundation in data structures and algorithms, with a problem-solving mindset focused on writing efficient, optimized, and scalable code."
-          video="video.mp4"
+          img="/dSA.png"
         />
 
         <GlassCard
           title="Competitive Programming"
           description="Actively solving complex algorithmic problems to sharpen analytical thinking and implement high-performance solutions within limited time."
-          video="video2.mp4"
+          img="/codechef.png"
         />
       </div>
 
